@@ -7,7 +7,7 @@
       type="text"
       id="name"
       name="name"
-      placeholder="Voer je voornaam in"
+      placeholder="Typ hier je voornaam in"
       required
     />
 
@@ -16,7 +16,7 @@
       type="text"
       id="surname"
       name="surname"
-      placeholder="Voer je achternaam in"
+      placeholder="Typ hier je achternaam in"
       required
     />
 
@@ -25,7 +25,7 @@
       type="email"
       id="email"
       name="email"
-      placeholder="Voer je e-mailadres in"
+      placeholder="Typ hier je e-mailadres in"
       required
     />
   </fieldset>
@@ -37,7 +37,7 @@
     <textarea
       id="message"
       name="message"
-      placeholder="Typ hier je bericht"
+      placeholder="Typ hier je bericht in"
       rows="10"
       required
     ></textarea>
@@ -84,7 +84,7 @@
 
   input:focus,
   textarea:focus {
-    border-color: blue; 
+    border-color: blue;
     outline: none;
   }
 
