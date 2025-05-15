@@ -48,19 +48,20 @@
 
 <style>
   form {
-    max-width: 31rem;
-    margin: 2rem auto;
-    display: flex;
-    flex-direction: column;
     gap: 1.5rem;
+    display: flex;
+    margin: 2rem auto;
+    max-width: 31rem;
+    flex-direction: column;
+
   }
 
   fieldset {
-    border: none;
+    gap: 1rem;
     padding: 0;
+    border: none;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
   }
 
   legend {
@@ -68,24 +69,24 @@
   }
 
   label {
-    font-weight: 600;
     font-size: 1rem;
+    font-weight: 600;
   }
 
   input,
   textarea {
-    padding: 0.3rem 0.4rem;
-    border: 0.1rem solid #bbb;
-    border-radius: 0.7rem;
     font-size: 1rem;
     font-family: inherit;
+    border-radius: 0.7rem;
+    padding: 0.3rem 0.4rem;
+    border: 0.1rem solid #bbb;
     transition: border-color 0.2s ease;
   }
 
   input:focus,
   textarea:focus {
-    border-color: blue;
     outline: none;
+    border-color: blue;
   }
 
   input:valid {
@@ -98,14 +99,14 @@
   }
 
   button {
-    align-self: flex-start;
-    padding: 0.3rem 0.7rem;
-    background-color: #222;
-    color: white;
     border: none;
-    border-radius: 0.375rem;
+    color: white;
     font-size: 1rem;
     cursor: pointer;
+    align-self: flex-start;
+    padding: 0.3rem 0.7rem;
+    border-radius: 0.375rem;
+    background-color: #222;
     transition: background-color 0.2s ease;
   }
 
