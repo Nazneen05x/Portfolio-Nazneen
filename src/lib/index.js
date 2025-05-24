@@ -1,1 +1,1 @@
-export { default as Contactform } from "$lib/components/Contact/contactForm.svelte";
+export { default as ContactForm } from "$lib/components/Contact/contactForm.svelte";

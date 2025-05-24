@@ -1,4 +1,15 @@
-<form>
+<script>
+  let name = "";
+  let surname = "";
+  let email = "";
+  let message = "";
+
+  function handleSubmit(event) {
+    event.preventDefault();
+  }
+</script>
+
+<form on:submit={handleSubmit}>
   <fieldset>
     <legend>Persoonlijke Gegevens</legend>
 
@@ -8,6 +19,7 @@
       id="name"
       name="name"
       placeholder="Typ hier je voornaam in"
+      bind:value={name}
       required
     />
 
@@ -17,6 +29,7 @@
       id="surname"
       name="surname"
       placeholder="Typ hier je achternaam in"
+      bind:value={surname}
       required
     />
 
@@ -26,6 +39,7 @@
       id="email"
       name="email"
       placeholder="Typ hier je e-mailadres in"
+      bind:value={email}
       required
     />
   </fieldset>
@@ -39,6 +53,7 @@
       name="message"
       placeholder="Typ hier je bericht in"
       rows="10"
+      bind:value={message}
       required
     ></textarea>
   </fieldset>
@@ -53,7 +68,6 @@
     margin: 2rem auto;
     max-width: 31rem;
     flex-direction: column;
-
   }
 
   fieldset {
