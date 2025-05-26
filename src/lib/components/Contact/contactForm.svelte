@@ -1,15 +1,14 @@
 <script>
-  let name = "";
-  let surname = "";
-  let email = "";
-  let message = "";
+  import { enhance } from "$app/forms";
+  let { form } = $props();
 
-  function handleSubmit(event) {
-    event.preventDefault();
-  }
+  let name = $state("");
+  let surname = $state("");
+  let email = $state("");
+  let message = $state("");
 </script>
 
-<form on:submit={handleSubmit}>
+<form method="POST" action="/contact" use:enhance={form}>
   <fieldset>
     <legend>Persoonlijke Gegevens</legend>
 
@@ -60,6 +59,10 @@
 
   <button type="submit">Verstuur</button>
 </form>
+
+{#if form?.message}
+  <p class="success">{form.message}</p>
+{/if}
 
 <style>
   form {
