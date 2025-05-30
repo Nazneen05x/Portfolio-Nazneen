@@ -4,4 +4,4 @@
 </script>
 
 <Heroheader heroheaders={data.heroheaders} />
-<ContactSection contacts={data.contacts} />
+<!-- <ContactSection contacts={data.contacts} /> -->
