@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  /* color */
+  --heroHeader-color: #800020;
+  --sectionSand-color: #f7e7ce;
+  --sectioncream-color: #fff8f0;
+
+  /* font-family */
+  --title-font-regular: "Quicksand", sans-serif;
+  --title-font-bold: "Quicksand", sans-serif;
+
+  /* font-weight */
+  --font-quicksand-regular-weight: 400;
+  --font-quicksand-bold-weight: 700;
+}
+  
