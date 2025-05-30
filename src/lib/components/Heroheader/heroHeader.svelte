@@ -27,12 +27,12 @@
 
   h1::first-letter {
     font-size: 1.5em;
-    font-weight: var(--font-quicksand-bold-weight);
+    font-family: var(--title-font-bold);
     font-weight: var(--font-quicksand-bold-weight);
   }
 
   img {
-    width: 65vw;
+    width: 15rem;
     border-radius: 1rem;
   }
 
@@ -57,7 +57,7 @@
     }
 
     img {
-      width: 20vw;
+      width: 18rem;
       height: auto;
     }
 
