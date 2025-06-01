@@ -1,14 +1,15 @@
 <script>
   import { enhance } from "$app/forms";
-  let { form } = $props();
 
-  let name = $state("");
-  let surname = $state("");
-  let email = $state("");
-  let message = $state("");
+  export let form;
+
+  let name = "";
+  let surname = "";
+  let email = "";
+  let message = "";
 </script>
 
-<form method="POST" action="/contact" use:enhance={form}>
+<form method="POST" use:enhance>
   <fieldset>
     <legend>Persoonlijke Gegevens</legend>
 
@@ -60,9 +61,15 @@
   <button type="submit">Verstuur</button>
 </form>
 
-{#if form?.message}
-  <p class="success">{form.message}</p>
+{#if form?.success}
+  <p>✅ Bericht verzonden!</p>
+{:else if form && form.success === false}
+  <p>❌ Er is iets misgegaan.</p>
 {/if}
+
+<!-- {#if form?.message}
+  <p class="success">{form.message}</p>
+{/if} -->
 
 <style>
   form {
