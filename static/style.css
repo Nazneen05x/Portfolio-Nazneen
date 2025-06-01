@@ -7,10 +7,11 @@
 html {
   /* color */
   --heroHeader-color: #800020;
-  --sectionSand-color: #f7e7ce;
+  --sectionSand-color: #F7E7CE;
   --sectioncream-color: #FFF8F0;
 
   /* font-family */
+  --title-font-regular-montserrat: "Montserrat", sans-serif;
   --title-font-regular: "Quicksand", sans-serif;
   --title-font-bold: "Quicksand", sans-serif;
 

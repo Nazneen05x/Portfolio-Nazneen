@@ -20,6 +20,16 @@ export async function load() {
         title
         description
       }
+      
+      aboutMes {
+    createdAt
+    id
+    title
+    description
+    img {
+      url
+    }
+  }
     }
   `;
 
@@ -35,6 +45,7 @@ export async function load() {
 
   return {
     heroheaders: data.heroheaders,
+    aboutMes: data.aboutMes,
     contacts: data.contacts,
   };
 }
