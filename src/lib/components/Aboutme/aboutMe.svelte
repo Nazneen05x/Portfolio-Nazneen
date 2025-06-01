@@ -19,11 +19,10 @@
 
 <style>
   section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 4rem 2rem;
     gap: 2rem;
+    display: flex;
+    padding: 4rem 2rem;
+    flex-direction: column;
     background-color: var(--sectionSand-color);
   }
 
@@ -41,21 +40,64 @@
   }
 
   p {
-    font-size: 1.2rem;
-
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    line-break: anywhere;
     font-family: var(--title-font-regular-montserrat);
-    font-weight: var(--font-quicksand-regular-weight);
-  }
-
-  .about-text {
-    max-width: 36vw;
   }
 
   img {
-    max-width: 28vw;
-    width: 100%;
+    width: 60vw;
     height: auto;
     object-fit: cover;
     border-radius: 1rem;
+  }
+
+  @media (min-width: 37.5rem) and (max-width: 64rem) {
+    section {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+
+    .about-text {
+      max-width: 26vw;
+    }
+
+    img {
+      width: 17rem;
+    }
+  }
+
+  @media (min-width: 64rem) {
+    section {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+
+    .about-text {
+      max-width: 26vw;
+    }
+
+    img {
+      width: 30vw;
+    }
+  }
+
+  @media (min-width: 100rem) {
+    h2 {
+      font-size: 4rem;
+    }
+
+    h2::first-letter {
+      font-size: 5rem;
+    }
+
+    p {
+      font-size: 2.5rem;
+    }
   }
 </style>

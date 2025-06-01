@@ -4,7 +4,13 @@
 
 <header>
   <h1>{heroheaders[0].title}</h1>
-  <img src={heroheaders[0].img.url} alt="" width="100" loading="lazy" />
+  <img
+    src={heroheaders[0].img.url}
+    alt=""
+    height="100"
+    width="100"
+    loading="lazy"
+  />
 </header>
 
 <style>
@@ -32,7 +38,8 @@
   }
 
   img {
-    width: 15rem;
+    width: 60vw;
+    height: auto;
     border-radius: 1rem;
   }
 
@@ -47,6 +54,10 @@
       font-size: 1.5rem;
       padding: 1rem 2rem;
     }
+
+    img {
+      width: 30vw;
+    }
   }
 
   @media (min-width: 64rem) {
@@ -58,7 +69,6 @@
 
     img {
       width: 18rem;
-      height: auto;
     }
 
     h1 {
