@@ -75,7 +75,6 @@
 
   .marquee span::first-letter {
     color: black;
-    font-size: 2rem;
     font-family: var(--title-font-bold);
     font-weight: var(--font-quicksand-bold-weight);
   }
