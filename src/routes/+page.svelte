@@ -6,3 +6,4 @@
 <Heroheader heroheaders={data.heroheaders} />
 <Marquee />
 <AboutMe aboutMes={data.aboutMes} />
+<ContactSection contacts={data.contacts} />

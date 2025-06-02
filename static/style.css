@@ -7,8 +7,10 @@
 html {
   /* color */
   --heroHeader-color: #800020;
-  --sectionSand-color: #F7E7CE;
-  --sectioncream-color: #FFF8F0;
+  --sectionSand-color: #f7e7ce;
+  --sectioncream-color: #fff8f0;
+  --connectButton-color: #a73535;
+  --connectButton-hover: #800020;
 
   /* font-family */
   --title-font-regular-montserrat: "Montserrat", sans-serif;
@@ -19,4 +21,3 @@ html {
   --font-quicksand-regular-weight: 400;
   --font-quicksand-bold-weight: 700;
 }
-  
