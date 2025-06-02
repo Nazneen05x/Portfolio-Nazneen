@@ -1,9 +1,21 @@
 <script>
-  import { Heroheader, ContactSection, Marquee, AboutMe } from "$lib/index.js";
+  import {
+    Heroheader,
+    ContactSection,
+    Marquee,
+    AboutMe,
+    Projects,
+  } from "$lib/index.js";
+
   let { data } = $props();
 </script>
 
 <Heroheader heroheaders={data.heroheaders} />
+
 <Marquee />
+
 <AboutMe aboutMes={data.aboutMes} />
+
+<Projects Projects={data.projects} />
+
 <ContactSection contacts={data.contacts} />

@@ -30,6 +30,13 @@ export async function load() {
       url
     }
   }
+
+  projects {
+    createdAt
+    id
+    title
+    description
+  }
     }
   `;
 
@@ -47,5 +54,6 @@ export async function load() {
     heroheaders: data.heroheaders,
     aboutMes: data.aboutMes,
     contacts: data.contacts,
+    projects: data.projects,
   };
 }
