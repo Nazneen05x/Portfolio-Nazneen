@@ -1,4 +1,5 @@
 <script>
+  import Footer from "$lib/components/Footer/footer.svelte";
   import {
     Heroheader,
     ContactSection,
@@ -19,3 +20,5 @@
 <Projects Projects={data.projects} />
 
 <ContactSection contacts={data.contacts} />
+
+<Footer />
