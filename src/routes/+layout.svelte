@@ -1,3 +1,3 @@
-{@render children?.()}
-
-
+<main>
+  <slot />
+</main>
