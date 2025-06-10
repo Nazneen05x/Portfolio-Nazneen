@@ -1,2 +1,24 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<script>
+  import Footer from "$lib/components/Footer/footer.svelte";
+  import {
+    Heroheader,
+    ContactSection,
+    Marquee,
+    AboutMe,
+    Projects,
+  } from "$lib/index.js";
+
+  let { data } = $props();
+</script>
+
+<Heroheader heroheaders={data.heroheaders} />
+
+<Marquee />
+
+<AboutMe aboutMes={data.aboutMes} />
+
+<Projects Projects={data.projects} />
+
+<ContactSection contacts={data.contacts} />
+
+<Footer />
