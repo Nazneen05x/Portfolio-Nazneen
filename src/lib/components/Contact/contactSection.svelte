@@ -42,7 +42,7 @@
   .connect-container {
     gap: 0.7rem;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: row-reverse;
   }
 

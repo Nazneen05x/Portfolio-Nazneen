@@ -14,6 +14,7 @@
 
 <style>
   section {
+    padding: 1rem;
     background-color: var(--sectioncream-color);
   }
 
