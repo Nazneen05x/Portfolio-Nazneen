@@ -24,10 +24,4 @@
     list-style: none;
     justify-content: center;
   }
-
-  ul a {
-    color: #444;
-    font-size: 1rem;
-    text-decoration: none;
-  }
 </style>
