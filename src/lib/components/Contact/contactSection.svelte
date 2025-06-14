@@ -35,7 +35,7 @@
   .connect-container {
     gap: 0.7rem;
     display: flex;
-    align-items: flex-start;
+    align-items: baseline;
     flex-direction: row-reverse;
   }
 
