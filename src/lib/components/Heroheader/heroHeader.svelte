@@ -43,6 +43,7 @@
   #main-menu {
     list-style: none;
     display: flex;
+    font-size: 1.2rem;
     gap: 2rem;
     margin: 0;
     padding: 0;
@@ -52,7 +53,6 @@
     color: white;
     text-decoration: none;
     font-family: var(--title-font-regular-montserrat);
-
     text-transform: uppercase;
     transition: color 0.3s ease;
   }
