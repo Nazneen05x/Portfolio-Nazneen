@@ -1,3 +1,4 @@
+
 <script>
   import Footer from "$lib/components/Footer/footer.svelte";
   import {
@@ -22,3 +23,4 @@
 <ContactSection contacts={data.contacts} />
 
 <Footer />
+
