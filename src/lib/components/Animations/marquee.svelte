@@ -1,24 +1,21 @@
-<section class="marquee-wrapper">
-  <div class="marquee" role="marquee">
-    <span>html</span>
-    <span>css</span>
-    <span>javaScript</span>
-    <span>svelte (sveltekit)</span>
-    <span>hygraph</span>
-    <span>node js</span>
-    <span>accessibility</span>
-    <span>responsive websites</span>
-    <span>progressive enhancement</span>
-  </div>
+<section>
+  <ul class="marquee" role="marquee">
+    <li>html</li>
+    <li>css</li>
+    <li>javaScript</li>
+    <li>svelte (sveltekit)</li>
+    <li>hygraph</li>
+    <li>node js</li>
+    <li>accessibility</li>
+    <li>responsive websites</li>
+    <li>progressive enhancement</li>
+  </ul>
 </section>
 
 <style>
   section {
     padding: 1rem;
     background-color: var(--sectioncream-color);
-  }
-
-  .marquee-wrapper {
     overflow: hidden;
     position: relative;
     width: 100%;
@@ -38,7 +35,7 @@
     );
   }
 
-  .marquee {
+  ul {
     display: flex;
     white-space: nowrap;
   }
@@ -64,7 +61,7 @@
     }
   }
 
-  .marquee span {
+  .marquee li {
     padding: 1rem;
     color: black;
     font-size: 1.5rem;
@@ -74,7 +71,7 @@
     font-weight: var(--font-quicksand-regular-weight);
   }
 
-  .marquee span::first-letter {
+  .marquee li::first-letter {
     color: black;
     font-family: var(--title-font-bold);
     font-weight: var(--font-quicksand-bold-weight);
