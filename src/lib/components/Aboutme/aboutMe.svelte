@@ -56,6 +56,24 @@
 
     img {
       width: 30vw;
+
+      view-timeline-name: --revealing-image;
+      view-timeline-axis: block;
+
+      animation: linear reveal both;
+      animation-timeline: --revealing-image;
+      animation-range: entry 25% cover 50%;
+    }
+
+    @keyframes reveal {
+      from {
+        opacity: 0;
+        clip-path: inset(45% 20% 45% 20%);
+      }
+      to {
+        opacity: 1;
+        clip-path: inset(0% 0% 0% 0%);
+      }
     }
   }
 

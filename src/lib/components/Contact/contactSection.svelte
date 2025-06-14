@@ -26,13 +26,6 @@
     max-width: 25rem;
   }
 
-  h2::first-letter {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    font-family: var(--title-font-bold);
-    font-weight: var(--font-quicksand-bold-weight);
-  }
-
   h2,
   .connect-container {
     font-family: var(--title-font-regular);
