@@ -1,4 +1,5 @@
 <script>
+  import { goto } from "$app/navigation";
   let { contacts } = $props();
 </script>
 
@@ -7,7 +8,7 @@
 
   <div class="connect-container">
     <p>{contacts[0].description}</p>
-    <button>Let’s connect</button>
+    <button onclick={() => goto("/contact")}>Let’s connect</button>
   </div>
 </section>
 
