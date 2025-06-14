@@ -3,7 +3,16 @@
 </script>
 
 <header>
+  <nav>
+    <ul id="main-menu" role="menubar">
+      <li role="menuitem"><a href="#about">about</a></li>
+      <li role="menuitem"><a href="#projects">projects</a></li>
+      <li role="menuitem"><a href="/contact">Contact</a></li>
+    </ul>
+  </nav>
+
   <h1>{heroheaders[0].title}</h1>
+
   <img
     src={heroheaders[0].img.url}
     alt=""
@@ -15,6 +24,8 @@
 
 <style>
   header {
+    overflow: hidden;
+    position: relative;
     display: flex;
     padding: 2rem;
     flex-direction: column;
@@ -22,8 +33,38 @@
     background-color: var(--heroHeader-color);
   }
 
+  nav {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    z-index: 1000;
+  }
+
+  #main-menu {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  #main-menu li a {
+    color: white;
+    text-decoration: none;
+    font-family: var(--title-font-regular-montserrat);
+
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+  }
+
+  #main-menu li a:hover,
+  #main-menu li a:focus {
+    color: var(--main-color-beige);
+    outline: none;
+  }
+
   h1 {
-    margin: 1rem 0;
+    margin: 2rem 0;
     font-size: 1.5em;
     line-height: 1.5em;
     color: white;

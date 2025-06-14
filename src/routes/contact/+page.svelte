@@ -1,4 +1,5 @@
 <script>
+  import { goto } from "$app/navigation";
   import { enhance } from "$app/forms";
   export let form;
 
@@ -16,6 +17,8 @@
     }
   }
 </script>
+
+<button on:click={() => goto("/")}>back home</button>
 
 <form method="POST" action="/contact" use:enhance={handleEnhance}>
   <fieldset>

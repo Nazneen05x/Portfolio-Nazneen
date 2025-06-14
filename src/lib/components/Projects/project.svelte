@@ -2,7 +2,7 @@
   let { Projects } = $props();
 </script>
 
-<section>
+<section id="projects">
   <div class="projects-text">
     <h2>{Projects[0].title}</h2>
     <p>{Projects[0].description}</p>
