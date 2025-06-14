@@ -8,7 +8,14 @@
   let email = "";
   let message = "";
 
-  function handleEnhance({ result }) {
+  let isLoading = false;
+
+  async function handleEnhance({ result, update }) {
+    if (!update) return;
+    isLoading = true;
+    await update;
+    isLoading = false;
+
     if (result && result.type === "success") {
       name = "";
       surname = "";
@@ -69,14 +76,20 @@
     ></textarea>
   </fieldset>
 
-  <button type="submit">Verstuur</button>
-</form>
+  <button type="submit" disabled={isLoading}>
+    {#if isLoading}
+      <span class="spinner"></span> Versturen...
+    {:else}
+      Verstuur
+    {/if}
+  </button>
 
-{#if form?.type === "success"}
-  <p>✅ {form.data.message}</p>
-{:else if form?.type === "failure"}
-  <p>❌ {form.data.message}</p>
-{/if}
+  {#if form?.type === "success"}
+    <p>✅ {form.data.message}</p>
+  {:else if form?.type === "failure"}
+    <p>❌ {form.data.message}</p>
+  {/if}
+</form>
 
 <style>
   form {
@@ -143,5 +156,32 @@
 
   button:hover {
     background-color: #555;
+  }
+
+  button:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+
+  button:hover:enabled {
+    background-color: #555;
+  }
+
+  .spinner {
+    border: 4px solid rgba(255, 255, 255, 0.1);
+    border-top-color: white;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    animation: spin 1s linear infinite;
+    margin-right: 8px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
   }
 </style>

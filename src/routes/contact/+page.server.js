@@ -25,7 +25,7 @@ export const actions = {
       if (res.ok) {
         return {
           type: "success",
-          data: { message: "Formulier succesvol verzonden!" },
+          data: { message: "Bericht succesvol verzonden!" },
         };
       } else {
         return {
